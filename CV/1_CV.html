@@ -10,8 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!--Link del fw de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--Icono de la web-->
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135707.png">
+    <link id="icono" rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135707.png" style="color: white;">
 
     <!--Titulo de la pestaña-->
     <title>Curriculum Vitae</title>
@@ -19,12 +24,268 @@
     <!--Referencia al Css-->
     <link rel="stylesheet" type="text/css" href="2 css cv.css" />
 
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">        
 </head>
 
 <body>
+  <script src="javascriptCV.js"></script>
+
+    <!-- Division del menu superior-->
+    <div class="header-contenedor">
+        <header>
+            <div class="nombreMenu">
+                <a href="#">Jeremy Bell</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <span>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#sobreMi">SOBRE MI</a></li>
+                        <li><a href="#misIdiomas">IDIOMAS Y SOFTWARE</a></li>
+                        <li><a href="#estudios">ESTUDIOS Y EXPERIENCIA LABORAL </a></li>                    
+                    </span>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!--Division del inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenidoInicio">
+            <div class="imagen">
+                <img id="fotoPerfil" src="https://randomuser.me/api/portraits/men/97.jpg"
+                    alt="La foto de perfil no está cargando debidamente">
+            </div>
+            <h1>Jeremy Bell</h1>
+            <h2>Experto en desarrollo de aplicaciones</h2>
+            <div class="redesSociales">
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Division sobre mi-->
+    <section id="sobreMi" class="sobreMi">
+        <div class="datosPersonales">
+            <h2>Sobre mí</h2>
+            <p> <span> Soy Jeremy Bell,</span>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut maximus orci. Ut a nisi
+                sollicitudin, porttitor mi eu, auctor nibh. Suspendisse varius tellus ut accumsan scelerisque. Aliquam
+                dictum sed libero non laoreet. Mauris porttitor ante in iaculis suscipit. Suspendisse lacinia volutpat
+                leo a laoreet. Nullam dictum libero et ante rhoncus, nec interdum nisi consectetur. Aenean sit amet elit
+                scelerisque, aliquam velit eu, scelerisque ligula. Mauris pellentesque molestie facilisis. Quisque
+                facilisis vestibulum est. Nulla facilisi. Morbi rhoncus malesuada nisl, et porta nunc sagittis in. Nunc
+                tristique pulvinar neque, sit amet tempus eros hendrerit ornare.</p>
+
+            <p>Aenean malesuada, elit a blandit ornare, quam ante volutpat orci, id auctor massa neque at magna. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, blandit in arcu eu, convallis
+                dictum erat. Donec non tellus massa. Morbi vitae sem vel nisl scelerisque sollicitudin sit amet eget
+                dui. Vestibulum elit lacus, convallis ut consequat nec, laoreet ut augue. Aliquam fringilla sem id
+                ligula luctus aliquet. Sed ultrices felis et mattis posuere. Fusce elementum blandit luctus. Vestibulum
+                in mauris et libero cursus convallis vitae eu urna. Cras tortor mi, dapibus in ullamcorper in, ultricies
+                ut quam. Nulla facilisi. Nulla consequat diam eu est finibus mattis.</p>
+
+            <p>Nunc erat est, feugiat eget ultrices vitae, varius ut risus. Quisque sodales suscipit ultrices. Curabitur
+                mi lacus, aliquam vel tincidunt sed, feugiat id neque. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. Ut auctor nisl eget ultricies luctus. Sed velit erat,
+                ullamcorper vel scelerisque in, ullamcorper a magna. Proin sagittis orci eu libero viverra sodales.</p>
+
+            <ul>
+                <li> <i class="fa-solid fa-envelope"></i> <strong> Email: </strong>
+                    jeremy.bell@example.com </li>
+
+                <li><i class="fa-solid fa-cake-candles"></i> <strong> Cumpleaños: </strong>
+                    10 de marzo de 1978</li>
+
+                <li><i class="fa-solid fa-address-book"></i> <strong> Domicilio: </strong>
+                    4338 Homestead Rd</li>
+
+                <li><i class="fa-solid fa-mobile"></i> <strong> Teléfono: </strong>
+                    (381) 293-1757</li>
+            </ul>
+            <button>
+                Descargar Curriculum
+                <i class="fa-solid fa-download"></i>
+                <span class="cover"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Division para idiomas-->
+    <section class="misIdiomas" id="misIdiomas">
+        <div class="idiomas">
+            <h2>Idiomas y Software</h2>
+            <div class="fila">
+                <div class="columna">
+                    <h3>Idiomas</h3>
+                    <div class="idioma">
+                        <span>Ingles</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <span>Francés</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <span>Portugués</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <span>Chino</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Software-->
+                <div class="columna">
+                    <h3>Software</h3>
+                    <div class="idioma">
+                        <span>ETAP</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>63%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <span>AutoCAD Electrical</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <span>SolidWorks</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="idioma">
+                        <span>GeoFryPlots</span>
+                        <div class="barra">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Division para la formación-->
+    <section id="estudios" class="estudios">
+        <div class="divisionContenido">
+            <h2>Estudios y experiencia laboral</h2>
+            <div class="fila">
+                <div class="columnaIzquierda">
+                    <h3>Estudios</h3>
+                    <div class="itemIzquierda">
+                        <h4>Ingeniería Electrónica</h4>
+                        <span class="universidad">Universidad Tecnológica Nacional</span>
+                        <span class="fecha">2000 - 2005</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut repellendus dolorem cupiditate dolore, harum assumenda optio odit! Inventore quidem consectetur impedit aliquam quibusdam provident explicabo officia ut, soluta recusandae.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="itemIzquierda">
+                        <h4>Ingeniería en Petróleo</h4>
+                        <span class="universidad">Universidad de Buenos Aires</span>
+                        <span class="fecha">2006 - 2011</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione officiis, ea quaerat quibusdam deserunt veniam aperiam illum ipsa qui ullam omnis ut. Perspiciatis facilis ratione necessitatibus veniam itaque tempora sit?</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="itemIzquierda">
+                        <h4>Ingeniería en Sistemas</h4>
+                        <span class="universidad">Universidad Abierta Interamericana</span>
+                        <span class="fecha">2012 - 2017</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam exercitationem incidunt ab cum esse ratione commodi adipisci cumque quo suscipit nam quia sapiente temporibus maxime quam, excepturi tempore minima? Perferendis.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columnaDerecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="itemDerecho">
+                        <h4>Diseño y supervisión de equipos eléctricos en fábrica</h4>
+                        <span class="universidad">TransenEr</span>
+                        <span class="fecha">2007 - 2010</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut repellendus dolorem cupiditate dolore, harum assumenda optio odit! Inventore quidem consectetur impedit aliquam quibusdam provident explicabo officia ut, soluta recusandae.</p>
+                        <div class="conectorB">
+                            <div class="circuloB"></div>
+                        </div>
+                    </div>
+                    <div class="itemDerecho">
+                        <h4>Jefe en plataforma petrolífera</h4>
+                        <span class="universidad">YPF</span>
+                        <span class="fecha">2009 - 2015</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut repellendus dolorem cupiditate dolore, harum assumenda optio odit! Inventore quidem consectetur impedit aliquam quibusdam provident explicabo officia ut, soluta recusandae.</p>
+                        <div class="conectorB">
+                            <div class="circuloB"></div>
+                        </div>
+                    </div>
+                    <div class="itemDerecho">
+                        <h4>Gestión de base de datos con más de 350 clientes</h4>
+                        <span class="universidad">Microsoft</span>
+                        <span class="fecha">2015 - actualidad</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ut repellendus dolorem cupiditate dolore, harum assumenda optio odit! Inventore quidem consectetur impedit aliquam quibusdam provident explicabo officia ut, soluta recusandae.</p>
+                        <div class="conectorB">
+                            <div class="circuloB"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <p>Hola mundo!</p>
-    <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger" >Alto cartel vieja</div>
+    <!--Seccion del footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-arrow-up-to-line"></i>
+        </a>
+        <div class="redesSociales">
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
